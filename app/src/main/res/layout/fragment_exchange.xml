@@ -5,35 +5,59 @@
     android:orientation="vertical">
 
 
+    <!--Toolbar-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarCal"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-        <!--&lt;!&ndash;Row1&ndash;&gt;-->
-        <!--<LinearLayout-->
-            <!--android:orientation="horizontal"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content">-->
+    <LinearLayout
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:paddingTop="30dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-            <!--&lt;!&ndash;Icon&ndash;&gt;-->
-            <!--<ImageView-->
-                <!--android:layout_gravity="center_vertical"-->
-                <!--android:src=""-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content" />-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_action_name" />
 
-            <!--&lt;!&ndash;TextField&ndash;&gt;-->
-            <!--<EditText-->
-                <!--android:inputType="text"-->
-                <!--android:hint="Money in USD"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content" />-->
+        <!--Text Field-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Money in USD"
+            android:inputType="text" />
+    </LinearLayout>
 
+    <LinearLayout
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-        <!--</LinearLayout>-->
+        <!--Calculate Button-->
+        <Button
+            android:id="@+id/btnExchange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="exchange" />
 
+    </LinearLayout>
+    <!--ShowText-->
+    <TextView
 
-
-
-
-
-
-
+        android:paddingTop="320dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Toase Answer in THB"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 </LinearLayout>
