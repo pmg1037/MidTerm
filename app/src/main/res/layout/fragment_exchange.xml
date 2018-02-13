@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+        <!--&lt;!&ndash;Row1&ndash;&gt;-->
+        <!--<LinearLayout-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--&lt;!&ndash;Icon&ndash;&gt;-->
+            <!--<ImageView-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:src=""-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+
+            <!--&lt;!&ndash;TextField&ndash;&gt;-->
+            <!--<EditText-->
+                <!--android:inputType="text"-->
+                <!--android:hint="Money in USD"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+
+
+        <!--</LinearLayout>-->
+
+
+
+
+
+
+
+
+</LinearLayout>

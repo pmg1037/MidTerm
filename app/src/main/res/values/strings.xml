@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MidTerm</string>
+    <string name="name">ปิยะเทพ</string>
+    <string name="game">เกมส์</string>
 </resources>
