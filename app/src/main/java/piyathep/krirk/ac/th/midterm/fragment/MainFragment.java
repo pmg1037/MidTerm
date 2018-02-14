@@ -22,6 +22,7 @@ public class MainFragment extends Fragment{
 
         calculateController();
 
+
     }
 
     private void calculateController() {
@@ -29,9 +30,16 @@ public class MainFragment extends Fragment{
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final FragmentTransaction replace = getActivity().getSupportFragmentManager()
+//                final FragmentTransaction replace = getActivity().getSupportFragmentManager()
+//                        .beginTransaction()
+//                        .replace(R.id.contentMainFragment, new CalculateFragment());
+
+                getActivity().getSupportFragmentManager()
                         .beginTransaction()
-                        .replace(R.id.contentMainFragment, new CalculateFragment());
+                        .replace(R.id.contentMainFragment, new CalculateFragment())
+                        .commit();
+
+
             }
         });
     }

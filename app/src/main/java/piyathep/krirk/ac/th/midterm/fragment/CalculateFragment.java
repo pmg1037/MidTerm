@@ -19,7 +19,7 @@ import piyathep.krirk.ac.th.midterm.R;
  * Created by Piyathep on 13/2/2561.
  */
 
-public abstract class CalculateFragment extends Fragment implements View.OnClickListener {
+public class CalculateFragment extends Fragment{
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
@@ -28,14 +28,15 @@ public abstract class CalculateFragment extends Fragment implements View.OnClick
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getActivity().getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.contentMainFragment, new CalculateFragment())
-                        .addToBackStack(null)
-                        .commit();
+//                getActivity().getSupportFragmentManager().beginTransaction()
+//                        .replace(R.id.contentMainFragment, new CalculateFragment())
+//                        .addToBackStack(null)
+//                        .commit();
             }
         });
 
-        Toolbar toolbar = getView().findViewById(R.id.toolbarCal);
+        android.support.v7.widget.Toolbar
+                toolbar = getView().findViewById(R.id.toolbarCal);
         ((MainActivity) getActivity()).setSupportActionBar(toolbar);
 
         ((MainActivity) getActivity()).getSupportActionBar()
@@ -54,6 +55,14 @@ public abstract class CalculateFragment extends Fragment implements View.OnClick
             }
         });
 
-    }}
+    }
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_exchange, container, false);
+        return view;
+    }
+}
 
 
